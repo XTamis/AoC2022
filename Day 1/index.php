@@ -1,6 +1,7 @@
 <?php
     $total_val_elf = 0;
     $val_array = [];
+    $alphachar = array_merge(range('A', 'Z'), range('a', 'z'));
 
     $handle = fopen("7532.txt", "r");
     if ($handle) {

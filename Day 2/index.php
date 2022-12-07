@@ -11,6 +11,9 @@
 
             $values = str_replace($str, $rplc, $values);
 
+            echo $line."<br>";
+
+            echo $total_score.' - ';
             // Win
             if ($values[0] < $values[1]) {
                 $total_score += $values[1] + 6;
@@ -23,6 +26,8 @@
             else if ($values[0] > $values[1]) {
                 $total_score += $values[1];
             }
+
+            echo $total_score.'<br>';
         }
         fclose($handle);
     }
